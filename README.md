@@ -1,23 +1,10 @@
-# BoostHomes v3 (Static + Serverless)
+# BoostHomes v5 — Teal Hero Style (Match Screenshot)
 
-Luxury static site + Netlify Functions for MLS + ChatGPT.
+This package mirrors the look: dark teal aerial hero, big headline, handwritten signature, two CTAs, left portrait cutout, top utility bar with social/email/phone, and nav.
 
-## Deploy (Netlify)
-1) **Import from Git** → choose your GitHub repo.
-2) Build command: *(leave blank)*
-3) Publish directory: `.`
-4) Deploy.
+## Swap your own assets
+- Replace `assets/img/hero-teal.jpg` with your aerial hero.
+- Replace `assets/img/portrait-placeholder.png` with your cutout PNG.
+- Replace `assets/img/signature-placeholder.svg` with your signature.
 
-### Environment Variables (Site → Settings → Environment variables)
-- `BRIDGE_CLIENT_ID` — from Bridge Interactive (MLS)
-- `BRIDGE_CLIENT_SECRET` — from Bridge
-- `BRIDGE_MLS` — MLS slug (e.g., `miamire`)
-- `OPENAI_API_KEY` — your OpenAI key
-- `OPENAI_MODEL` — e.g., `gpt-4o-mini`
-
-### Functions
-- `netlify/functions/listings.js` → `/api/listings`
-- `netlify/functions/chat.js` → `/api/chat`
-
-The front-end chat widget is included (floating button).
-
+Edit text in `index.html`. Colors live in `css/styles.css`.
