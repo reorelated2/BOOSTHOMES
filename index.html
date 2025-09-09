@@ -3,114 +3,202 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kyle Kleinman — Real Estate & Advisory</title>
-  <meta name="description" content="South Florida real estate acquisitions, sales, and advisory. Off‑market deals, BPOs, and investor services.">
+  <title>BoostHomes — South Florida Real Estate</title>
+  <meta name="description" content="Miami & Broward acquisitions, listings, and advisory. Off-market deals, BPOs, and investor services with sharp execution.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/favicon.svg">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="site-header">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
     <div class="container row between center">
-      <a class="logo" href="/">BoostHomes</a>
-      <nav class="nav">
-        <a href="#services">Services</a>
-        <a href="#portfolio">Deals</a>
-        <a href="#about">About</a>
-        <a class="btn" href="#contact">Contact</a>
+      <a class="logo row center" href="#top">
+        <img alt="" src="assets/img/logo.svg" height="28" />
+        <span>BoostHomes</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <button class="menu-btn" aria-expanded="false" aria-controls="nav-drawer" id="menuBtn">Menu</button>
+        <ul id="nav-drawer" class="nav-list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#areas">Areas</a></li>
+          <li><a href="#listings">Listings</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="btn small" href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>South Florida Real Estate, Done Right.</h1>
-        <p class="lead">16+ years of acquisitions, BPOs, and new‑construction sales. Street‑smart strategy, clean execution.</p>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero section-bleed">
+      <picture>
+        <img src="assets/img/hero.jpg" alt="Miami skyline at dusk" class="hero-bg" />
+      </picture>
+      <div class="container hero-inner">
+        <h1><span class="accent">South Florida</span> Real Estate with Teeth.</h1>
+        <p class="lead">No fluff. Straight numbers, clean contracts, and deals that close.</p>
         <div class="cta-row">
           <a class="btn primary" href="#contact">Book a Consult</a>
-          <a class="btn ghost" href="#portfolio">See Recent Deals</a>
+          <a class="btn ghost" href="#listings">See Listings</a>
+        </div>
+        <div class="stats row">
+          <div><strong>16+</strong><span>Years in market</span></div>
+          <div><strong>$100M+</strong><span>Transaction scope</span></div>
+          <div><strong>2 Counties</strong><span>Miami-Dade • Broward</span></div>
         </div>
       </div>
     </section>
 
+    <!-- Services -->
     <section id="services" class="section">
       <div class="container">
-        <h2>What I Do</h2>
-        <div class="cards">
-          <div class="card">
+        <h2 class="eyebrow">What We Do</h2>
+        <div class="grid cards-3">
+          <article class="card fade">
             <h3>Investor Buy Box</h3>
-            <p>Off‑market leads, underwriting, and fast offers. Miami‑Dade + Broward focus.</p>
-          </div>
-          <div class="card">
+            <p>Off-market pipeline, quick underwriting, and offers that get accepted.</p>
+          </article>
+          <article class="card fade">
             <h3>BPOs & Valuations</h3>
-            <p>Broker Price Opinions and appraisal‑style reports that help you price with conviction.</p>
-          </div>
-          <div class="card">
-            <h3>New Home Sales</h3>
-            <p>Ground‑up launches and builder sales. Former Progress Residential buyer’s agent.</p>
-          </div>
+            <p>Broker Price Opinions with appraisal-grade comps, delivered fast.</p>
+          </article>
+          <article class="card fade">
+            <h3>New Construction Sales</h3>
+            <p>From pre-launch to closeout. Builder-friendly systems that convert.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="portfolio" class="section alt">
+    <!-- Areas -->
+    <section id="areas" class="section alt">
       <div class="container">
-        <h2>Recent Highlights</h2>
-        <ul class="deal-list">
-          <li><span class="tag">REO</span> West Little River rehab — full gut, strong ARV.</li>
-          <li><span class="tag">New Build</span> 33 townhomes, Cutler Bay — sales mgmt 2014–2016.</li>
-          <li><span class="tag">Hedge Fund</span> Progress Residential buyer’s agent 2015–2017.</li>
-        </ul>
+        <h2 class="eyebrow">Target Areas</h2>
+        <div class="grid areas">
+          <figure class="tile fade">
+            <img src="assets/img/hero.jpg" alt="Miami">
+            <figcaption>Miami</figcaption>
+          </figure>
+          <figure class="tile fade">
+            <img src="assets/img/hero.jpg" alt="Brickell">
+            <figcaption>Brickell</figcaption>
+          </figure>
+          <figure class="tile fade">
+            <img src="assets/img/hero.jpg" alt="Fort Lauderdale">
+            <figcaption>Fort Lauderdale</figcaption>
+          </figure>
+          <figure class="tile fade">
+            <img src="assets/img/hero.jpg" alt="Coral Gables">
+            <figcaption>Coral Gables</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="section">
+    <!-- IDX / Listings placeholder -->
+    <section id="listings" class="section">
+      <div class="container">
+        <h2 class="eyebrow">Featured Listings</h2>
+        <div id="listing-grid" class="grid cards-3">
+          <div class="card muted">Live MLS tiles go here. When Bridge is approved, this section auto-populates.</div>
+          <div class="card muted">Serverless endpoint: <code>/api/listings</code></div>
+          <div class="card muted">Compliant attribution + disclaimers will display below.</div>
+        </div>
+        <p class="muted small">Listing information © respective MLS. Data deemed reliable but not guaranteed.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section alt">
       <div class="container two-col">
         <div>
-          <h2>About Kyle</h2>
-          <p>Miami‑born operator blending deep local knowledge with investor discipline. I move fast, tell the truth, and keep deals clean.</p>
+          <h2 class="eyebrow">About</h2>
+          <h3 class="about-title">Kyle Kleinman</h3>
+          <p>Miami-born operator with a builder’s brain and investor discipline. We play the long game, but we move quick.</p>
           <ul class="bullets">
-            <li>Started in 2009 • Full‑time since 2012</li>
-            <li>Appraisals/BPOs, REO, property management</li>
-            <li>Network across Miami‑Dade & Broward</li>
+            <li>Appraisals/BPOs, REO, acquisitions</li>
+            <li>Progress Residential buyer’s agent alum</li>
+            <li>Network across Miami-Dade & Broward</li>
           </ul>
         </div>
-        <div>
-          <div class="profile">
-            <img src="assets/img/placeholder-avatar.svg" alt="Profile">
-          </div>
+        <aside class="profile">
+          <img src="assets/img/avatar.svg" alt="Profile placeholder">
+        </aside>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+      <div class="container">
+        <h2 class="eyebrow">What Clients Say</h2>
+        <div class="grid quotes">
+          <blockquote class="quote fade">
+            <p>“Numbers first, ego last. Cleanest deal we’ve done in Miami.”</p>
+            <footer>— Institutional buyer</footer>
+          </blockquote>
+          <blockquote class="quote fade">
+            <p>“Gave me three options, told me the truth. Closed above ask.”</p>
+            <footer>— Seller, Broward</footer>
+          </blockquote>
+          <blockquote class="quote fade">
+            <p>“Underwrote, negotiated, and kept everyone calm. Pro.”</p>
+            <footer>— Builder partner</footer>
+          </blockquote>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section alt">
-      <div class="container">
-        <h2>Let’s Talk</h2>
+    <!-- Contact -->
+    <section id="contact" class="section cta">
+      <div class="container two-col">
+        <div>
+          <h2 class="eyebrow">Let’s talk shop</h2>
+          <p class="lead">Tell me your buy box or your timeline. I’ll give you the fastest path to a signed deal.</p>
+          <ul class="contact-list">
+            <li><a href="mailto:kylekleinmanpa@gmail.com">kylekleinmanpa@gmail.com</a></li>
+            <li><a href="tel:+13059724118">305-972-4118</a></li>
+            <li>Miami-Dade • Broward</li>
+          </ul>
+        </div>
         <form class="contact-form" name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact">
-          <div class="grid">
-            <input name="name" placeholder="Your name" required>
-            <input name="email" type="email" placeholder="Email" required>
-          </div>
+          <input name="name" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Email" required>
           <textarea name="message" rows="5" placeholder="What are you looking to do?"></textarea>
           <button class="btn primary" type="submit">Send</button>
         </form>
-        <p class="muted">Or email <a href="mailto:kylekleinmanpa@gmail.com">kylekleinmanpa@gmail.com</a> · Tel: <a href="tel:+13059724118">305‑972‑4118</a></p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container row between center">
-      <p>© <span id="year"></span> Kyle Kleinman · BoostHomes</p>
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/kylekleinman" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="#" aria-disabled="true">Instagram</a>
-      </div>
+      <p>© <span id="year"></span> BoostHomes · All rights reserved.</p>
+      <nav aria-label="Footer">
+        <a href="#top">Back to top</a>
+      </nav>
     </div>
   </footer>
+
+  <!-- Floating Chat Widget -->
+  <button id="chat-toggle" class="chat-fab" aria-controls="chat-panel" aria-expanded="false">Chat</button>
+  <section id="chat-panel" class="chat-panel" aria-live="polite" aria-label="Chat with BoostHomes AI">
+    <header class="chat-header">
+      <strong>BoostHomes AI</strong>
+      <button id="chat-close" class="chat-close" aria-label="Close chat">×</button>
+    </header>
+    <div id="chat-log" class="chat-log" role="log"></div>
+    <form id="chat-form" class="chat-form">
+      <input id="chat-input" placeholder="Ask about Miami listings, neighborhoods, or valuations…" autocomplete="off" />
+      <button class="btn primary" type="submit">Send</button>
+    </form>
+    <p class="muted small" style="margin:8px 0 0 0;">AI answers may be inaccurate. Not a substitute for professional advice.</p>
+  </section>
 
   <script src="js/site.js"></script>
 </body>

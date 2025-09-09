@@ -1,22 +1,23 @@
-# BoostHomes Site (Static)
+# BoostHomes v3 (Static + Serverless)
 
-A fast, static landing site for Kyle Kleinman (South Florida real estate). Built with vanilla HTML/CSS/JS, deploys automatically to **GitHub Pages** using Actions.
+Luxury static site + Netlify Functions for MLS + ChatGPT.
 
-## Quick Start
+## Deploy (Netlify)
+1) **Import from Git** → choose your GitHub repo.
+2) Build command: *(leave blank)*
+3) Publish directory: `.`
+4) Deploy.
 
-1. **Create a repo** on GitHub (e.g., `boosthomes-site`).
-2. Upload these files (or push via git).
-3. Go to **Settings → Pages**, make sure "Source: GitHub Actions" is selected.
-4. The included workflow will publish to Pages. Your site will be live at `https://<your-username>.github.io/<repo-name>/`.
+### Environment Variables (Site → Settings → Environment variables)
+- `BRIDGE_CLIENT_ID` — from Bridge Interactive (MLS)
+- `BRIDGE_CLIENT_SECRET` — from Bridge
+- `BRIDGE_MLS` — MLS slug (e.g., `miamire`)
+- `OPENAI_API_KEY` — your OpenAI key
+- `OPENAI_MODEL` — e.g., `gpt-4o-mini`
 
-### Local Dev
-Just open `index.html` in a browser. No build step required.
+### Functions
+- `netlify/functions/listings.js` → `/api/listings`
+- `netlify/functions/chat.js` → `/api/chat`
 
-### Contact Form
-Form is set with `data-netlify="true"` so it works out of the box if you deploy on Netlify. On GitHub Pages, swap to a form backend (Formspree, Basin) or remove `data-netlify` and embed your preferred form provider.
-
-### Customize
-- Edit content in `index.html`
-- Styles in `css/styles.css`
-- Behavior in `js/site.js`
+The front-end chat widget is included (floating button).
 
