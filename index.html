@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BoostHomes — Miami & Broward Real Estate</title>
-  <meta name="description" content="South Florida real estate. Strategy-first, execution-focused. Buy, sell, and invest with confidence.">
+  <meta name="description" content="South Florida real estate. Strategy-first, execution-focused. Buy, sell, and invest with confidence." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/img/favicon.svg">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+
   <!-- Utility bar -->
-  <div class="util">
+  <div class="util" aria-label="contact bar">
     <div class="container row between center">
       <div class="util-left">
-        <a class="social" aria-label="Facebook" href="#"></a>
-        <a class="social" aria-label="Instagram" href="#"></a>
-        <a class="social" aria-label="LinkedIn" href="#"></a>
         <a class="contact" href="mailto:kylekleinmanpa@gmail.com">info@boosthomes.co</a>
         <span class="split">•</span>
         <a class="contact" href="tel:+13059724118">(305) 972‑4118</a>
@@ -31,21 +30,21 @@
     </div>
   </div>
 
-  <!-- Header / Nav -->
-  <header class="header">
+  <!-- Header -->
+  <header class="header" role="banner">
     <div class="container row between center">
-      <a class="brand" href="#top">
-        <img src="assets/img/logo-teal.svg" alt="" height="28">
+      <a class="brand" href="#top" aria-label="BoostHomes home">
+        <img src="assets/img/logo.svg" alt="" height="28" />
         <span>BoostHomes</span>
       </a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navList">Menu</button>
         <ul id="navList" class="nav-list">
           <li><a href="#top">Home</a></li>
-          <li><a href="#search">Search</a></li>
+          <li><a href="#listings">Search</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#sell">Sell Your Home</a></li>
-          <li><a href="#connect">Connect</a></li>
+          <li><a href="#sell">Sell</a></li>
+          <li><a href="#contact">Connect</a></li>
         </ul>
       </nav>
     </div>
@@ -53,41 +52,48 @@
 
   <main id="main">
     <!-- HERO -->
-    <section class="hero" id="top">
-      <img class="hero-bg" src="assets/img/hero-teal.jpg" alt="Aerial waterfront view, South Florida">
-      <div class="hero-glass"></div>
+    <section class="hero" id="top" aria-label="Hero">
+      <img class="hero-bg" src="assets/img/hero.jpg" alt="Miami aerial waterfront" />
+      <div class="hero-tint"></div>
       <div class="container hero-inner">
-        <h1 class="hero-title">$2B+ Closed Volume,<br>4,000+ Families Assisted</h1>
-        <img class="signature" src="assets/img/signature-placeholder.svg" alt="Signature">
-        <div class="cta-row">
-          <a class="cta" href="#sell"><span class="arrow">➜</span> Looking To Sell</a>
-          <a class="cta" href="#search"><span class="arrow">➜</span> Looking To Buy</a>
+        <div class="hero-copy">
+          <h1 class="hero-title">71+ 5‑Star Reviews · 16+ Years · Miami‑Dade & Broward</h1>
+          <p class="hero-sub">Numbers first. Clean contracts. Closings that stick.</p>
+          <div class="cta-row">
+            <a class="btn primary lg" href="#listings" aria-label="Search MLS">Search MLS</a>
+            <a class="btn ghost lg" href="#sell" aria-label="Get your home value">Get Home Value</a>
+          </div>
         </div>
-        <img class="portrait" src="assets/img/portrait-placeholder.png" alt="Agent portrait">
+        <img class="portrait hard" src="assets/img/portrait.jpg" alt="Kyle Kleinman" />
         <div class="agent-tag">
           <strong>Kyle Kleinman</strong><br><span>Broker Associate</span>
         </div>
       </div>
     </section>
 
-    <!-- QUICK LINKS -->
-    <section class="section alt" id="search">
-      <div class="container grid cards-3">
-        <a class="quick card" href="#listings"><h3>Search Properties</h3><p>Live MLS (coming soon).</p></a>
-        <a class="quick card" href="#sell"><h3>Free Valuation</h3><p>Pricing that moves the deal.</p></a>
-        <a class="quick card" href="#connect"><h3>Talk to Kyle</h3><p>Book a consult in minutes.</p></a>
+    <!-- QUICK CTA STRIP -->
+    <section class="strip" id="listings">
+      <div class="container grid tiles-3">
+        <a class="tile" href="#listings"><span>New to Market</span></a>
+        <a class="tile" href="#communities"><span>Communities</span></a>
+        <a class="tile" href="#sell"><span>List with Us</span></a>
       </div>
     </section>
 
-    <!-- TEAM placeholder -->
+    <!-- ABOUT / TEAM -->
     <section id="team" class="section">
       <div class="container two-col">
         <div>
-          <h2>The Team</h2>
-          <p class="lead">Local operators with institutional standards. Appraisals/BPOs, acquisitions, new construction sales.</p>
+          <h2>Who You’re Hiring</h2>
+          <p class="lead">Miami-born operator with an investor’s discipline. Appraisals/BPOs, acquisitions, and builder sales across Miami‑Dade & Broward.</p>
+          <ul class="bullets">
+            <li>Progress Residential buyer’s agent alum</li>
+            <li>Valuations that price to close</li>
+            <li>Local network, institutional standards</li>
+          </ul>
         </div>
         <div class="panel">
-          <p>Swap in bios and headshots here.</p>
+          <p>Swap in team bios and headshots here.</p>
         </div>
       </div>
     </section>
@@ -96,25 +102,44 @@
     <section id="sell" class="section alt">
       <div class="container two-col">
         <div>
-          <h2>Sell Your Home</h2>
+          <h2>Sell with Confidence</h2>
           <p class="lead">Staging, pricing, and negotiation that protect your bottom line.</p>
           <ul class="bullets">
-            <li>Premium photography & video</li>
+            <li>Premium photo & video</li>
             <li>Targeted digital campaigns</li>
             <li>Qualified buyer network</li>
           </ul>
         </div>
         <div class="panel">
-          <p>kvCORE form embed slot — paste your widget code.</p>
+          <!-- kvCORE embed -->
+          <iframe style="width:100%; height:220px;" src="https://Kylekleinman.lokationre.com/sellembed.php" allowtransparency="true" frameborder="0" title="kvCORE seller form"></iframe>
         </div>
       </div>
     </section>
 
-    <!-- CONNECT -->
-    <section id="connect" class="section">
+    <!-- TESTIMONIALS -->
+    <section class="section" aria-label="Testimonials">
+      <div class="container">
+        <h2>Trusted by Buyers & Sellers</h2>
+        <div class="slider" id="slider" aria-live="polite">
+          <div class="slide active">“Quick, honest, and efficient. Closed above ask.” — Seller, Broward</div>
+          <div class="slide">“Underwrote and negotiated like a pro. Smooth close.” — Institutional buyer</div>
+          <div class="slide">“Gave options, told the truth. Best experience.” — Homeowner, Miami</div>
+        </div>
+        <div class="slider-controls">
+          <button class="dot active" aria-label="Slide 1"></button>
+          <button class="dot" aria-label="Slide 2"></button>
+          <button class="dot" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section cta">
       <div class="container two-col">
         <div>
-          <h2>Connect</h2>
+          <h2>Let’s talk</h2>
+          <p class="lead">Tell me your timeline or buy box. I’ll send a plan.</p>
           <ul class="contact-list">
             <li><a href="mailto:kylekleinmanpa@gmail.com">kylekleinmanpa@gmail.com</a></li>
             <li><a href="tel:+13059724118">(305) 972‑4118</a></li>
@@ -122,7 +147,7 @@
           </ul>
         </div>
         <div class="panel">
-          <p>Or drop a note via the chat widget (coming next).</p>
+          <p>Prefer chat? We can add an AI concierge that answers 24/7 and books calls.</p>
         </div>
       </div>
     </section>
